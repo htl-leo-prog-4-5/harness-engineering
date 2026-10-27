@@ -1,0 +1,25 @@
+/* Styling for {{< coding >}} callouts — HTML output only.
+   (PDF gets equivalent styling automatically from Quarto's callout support.)
+   Amber, to match the `caution` callout the shortcode emits. Taken unchanged
+   from the Creative Coding 2 book, where the same button is amber for the
+   coding activity, green for tutors and blue for quizzes. */
+
+.coding-cta p {
+  margin: 0;
+}
+
+.coding-cta a {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.4rem;
+  background: var(--bs-orange, #fd7e14);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.coding-cta a:hover,
+.coding-cta a:focus {
+  filter: brightness(1.08);
+  text-decoration: none;
+}
